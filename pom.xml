@@ -16,10 +16,10 @@
     </parent>
 
     <modules>
-        <module>order</module>
-        <module>kitchen</module>
-        <module>delivery</module>
-        <module>notification</module>
+        <module>order-service</module>
+        <module>kitchen-service</module>
+        <module>delivery-service</module>
+        <module>notification-service</module>
         <module>dependency_bom</module>
     </modules>
 
