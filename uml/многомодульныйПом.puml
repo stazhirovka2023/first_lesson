@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+protocol         dependencies_bom
+protocol         "order-service"
+protocol         "kitchen-service"
+protocol         "notification-service"
+protocol         "delivery-service"
+protocol         project_pom
+protocol         spring_parent
+
+spring_parent : Верси для 200 зависимостей и плагинов
+project_pom : Информация о модулях
+dependencies_bom : Зависимости для технологий которые\nмы будем использовать в наших модулях \nи их версии
+
+"order-service" : Веб, секьюрити, очереди
+"kitchen-service" : очереди
+"notification-service" : Почтовый модуль, очереди
+"delivery-service" : очереди, веб
+
+
+project_pom <|-up- spring_parent
+dependencies_bom <|-up- project_pom
+
+"order-service" <-up- dependencies_bom
+"kitchen-service" <-up- dependencies_bom
+"notification-service" <-up- dependencies_bom
+"delivery-service" <-up- dependencies_bom
+
+
+
+@enduml

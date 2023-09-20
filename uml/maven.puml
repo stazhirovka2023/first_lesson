@@ -1,0 +1,13 @@
+@startuml
+'https://plantuml.com/state-diagram
+
+clean -> validate
+validate -> compile
+compile -> test
+test -> package
+package -> verify
+verify -> install
+install -> site
+site -> deploy
+
+@enduml
