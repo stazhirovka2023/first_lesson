@@ -16,7 +16,7 @@
 
 
     <properties>
-        <spring.version>2.7.15-SNAPSHOT</spring.version>
+        <spring.version>2.6.7</spring.version>
         <mybatis.version>3.0.2</mybatis.version>
         <snakeyaml>2.2</snakeyaml>
         <maven.compiler.source>11</maven.compiler.source>
